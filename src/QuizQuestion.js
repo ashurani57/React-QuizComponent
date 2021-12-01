@@ -3,7 +3,7 @@ import QuizQuestionButton from "./QuizQuestionButton.js";
 class QuizQuestion extends Component {
   constructor(props) {
     super(props);
-    this.state = { incorrectAnswer: false };
+    this.state = { incorrectAnswer: true };
   }
   handleClick(buttonText) {
     if (buttonText === this.props.quiz_question.answer) {
